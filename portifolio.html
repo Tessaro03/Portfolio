@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="teste">
+        <header>
+            <div id="header">
+                <h2>.Gabriel </h2>
+            </div>
+            <nav style="display: none;">
+                <a href="#">Contato</a>
+                <a href="#"><p>Sobre Mim</p></a>
+                <a href="#"><p>CarToop</p></a>
+                <a href="#"><p>TaskHub</p></a>
+                <a href="#"><p>Projetos</p></a>
+                <a href="#"><p>API</p></a>
+                <a href="#"><p>Tecnologias</p></a>
+            </nav>
+        </header>
+            <section id='perfil'>
+                <div id="dados-perfil">
+                    <img id="foto-perfil" src="icones/eu.png" alt="Perfil">
+                    <br>
+                    <h1>Gabriel Tessaro Favareto</h1>
+                    <p > Desenvolvedor <strong style="color: var(--cor02);">Back-End</strong></p>
+                    <div id="icones-perfil">
+                        <a href="https://www.linkedin.com/in/gabriel-tessaro-b29728216/" target="_blank"> <img src="icones/linkedin (1).png" alt="Icone-Linkedin"></a>
+                        <a href="https://github.com/Tessaro03"  target="_blank"><img src="icones/github (1).png" alt="Icone-GitHub"></a>
+                        <a href="https://wa.me/qr/WR7PN7VJ2BQVE1"  target="_blank"><img src="icones/whatsapp (5).png" alt="Icone-Whatsapp"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <main>
+        <section id='sobre-mim'>
+            <h1>SOBRE MIM</h1>
+            <img src="icones/seta-para-baixo.png" alt="">
+            <div id="sobre-mim-info">
+                <p><strong style="color: var(--cor02); margin-left: 10px;"> Eu sou o Gabriel,</strong> um jovem de 19 anos apaixonado por tecnologia, com um interesse gigantesco por programação e uma vontade insaciável de aprender mais, pronto para dar início a minha jornada profissional nesse mundo que tanto admiro.</p>
+            </div>
+            <a style="color:white" href="currículo.pdf" download target="_blank">
+                <div id="curriculo">
+                    <p><strong>Currículo</strong></p>
+                    <img src="icones/subir-arquivo.png" alt="">
+                </div>
+            </a>
+        </section>
+        <section id="habilidades">
+            <h1>HABILIDADES</h1>
+            <div id="barra-habilidades"></div>
+            <div id="icones-habilidades">
+                <div class="icone-habilidade" id="python" onclick="selecionarIcone(this, ' - Python: avançando na orientação a objetos | Alura <br> - Python: entendendo a Orientação a Objetos | Alura <br> - Introdução a Programação Estruturada | UNIP <br> - Python 3 - Mundo 3   | Curso em Video <br> - Python 3 - Mundo 2   | Curso em Video <br> - Python 3 - Mundo 1   | Curso em Video <br> ' , ' O Python desempenhou um papel fundamental no meu aprendizado em programação. Através dele, adquiri conhecimentos sobre os fundamentos da programação, os quais pude aplicar em projetos como TaskHub e Cartoop, além de um projeto de criptografia e descriptografia que desenvolvi para as Atividades Práticas Supervisionadas (APS) na UNIP. ')">
+                    <img src="habilidades/python (1).png" alt="Icone-Habilidade">
+                </div>
+                <div class="icone-habilidade" id="django"  onclick="selecionarIcone(this, ' - API com Django 3: Django Rest Framework | Alura <br> - API com Django 3: Validações, buscas, filtros e deploy | Alura <br> - Django: autenticação de formulários e alerta | Alura <br> - Django: persistência de dados e Admin | Alura <br> - Formação Django: crie aplicações em Python | Alura <br> - Django: templates e boas práticas | Alura', 'Em todos os meus projetos web, fiz a escolha de empregar o Django devido à sua notável excelência como framework. Possuo profundo conhecimento em áreas como Models, views, URLs, forms, signals e messages de alerta. Fui especialmente cativado pela sua organização impecável e pela facilidade de uso que ele oferece.')">
+                    <img src="habilidades/icons8-django-64.png  " alt="Icone-Habilidade">
+                </div>
+                <div class="icone-habilidade" id="sql"  onclick="selecionarIcone(this, '- Banco de Dados | UNIP <br> - MySQL   | Curso em Video', 'Utilizei SQL nos meus projetos web para estabelecer conexões com dados. Empreguei diversos tipos de relacionamentos para ampliar as funcionalidades destinadas aos usuários, como a adição de amigos, a marcação de fotos como favoritas, o upload de múltiplas imagens e até mesmo a associação com veículos.')">
+                    <img src="habilidades/servidor-sql (1).png" alt="Icone-Habilidade">
+                </div>
+                <div class="icone-habilidade" id="java"  onclick="selecionarIcone(this, '- Linguagem de Programação Orientada á objetos | UNIP <br> - Java POO   | Curso em Video <br> - Java Básico   | Curso em Video ', 'Utilizei Java nas Atividades Práticas Supervisionadas (APS) na UNIP, onde desenvolvi um quiz educativo abordando a importância de cuidar do meio ambiente. Criei uma interface gráfica utilizando JavaFX. Além disso, realizei um projeto com orientação a objetos (POO) no contexto de um zoológico.')">
+                    <img src="habilidades/java (1).png" alt="Icone-Habilidade">
+                </div>
+                <div class="icone-habilidade" id="js"  onclick="selecionarIcone(this, ' - JavaScript   | Curso em Video', 'Utilizei o JavaScript em todos os meus projetos, incluindo para criar menus interativos e facilitar diversas interações na página. Ele desempenhou um papel fundamental na criação de menus de navegação que se expandem e contraem de maneira suave, melhorando a usabilidade do site. Além disso, empreguei o JavaScript para aprimorar a interatividade do usuário, como a exibição de janelas modais para exibir informações adicionais ou solicitar ações específicas. ')">
+                    <img src="habilidades/js (2).png" alt="Icone-Habilidade">
+                </div>
+                <div class="icone-habilidade" id="css"  onclick="selecionarIcone(this, '- HTML5 e CSS3: Módulo 4 DE 5   | Curso em Video <br> - HTML5 e CSS3: Módulo 3 DE 5   | Curso em Video <br> - HTML5 e CSS3: Módulo 2 DE 5   | Curso em Video <br> - HTML5 e CSS3: Módulo 1 DE 5   | Curso em Video ', 'HTML, CSS e JavaScript foram os pilares fundamentais presentes em todos os meus projetos web. Com o HTML, pude estruturar o conteúdo das páginas, organizando elementos como títulos, parágrafos e imagens de forma coerente. Utilizando o CSS, apliquei estilos visuais, como cores, fontes e layouts, para tornar o design atraente e responsivo, adaptando-se a diferentes dispositivos e tamanhos de tela.')">
+                    <img src="habilidades/css-3 (2).png" alt="Icone-Habilidade">
+                </div>
+
+                <div class="icone-habilidade" id="html"  onclick="selecionarIcone(this, '- HTML5 e CSS3: Módulo 4 DE 5   | Curso em Video <br> - HTML5 e CSS3: Módulo 3 DE 5   | Curso em Video <br> - HTML5 e CSS3: Módulo 2 DE 5   | Curso em Video <br> - HTML5 e CSS3: Módulo 1 DE 5   | Curso em Video ', 'HTML, CSS e JavaScript foram os pilares fundamentais presentes em todos os meus projetos web. Com o HTML, pude estruturar o conteúdo das páginas, organizando elementos como títulos, parágrafos e imagens de forma coerente. Utilizando o CSS, apliquei estilos visuais, como cores, fontes e layouts, para tornar o design atraente e responsivo, adaptando-se a diferentes dispositivos e tamanhos de tela.')">
+                    <img src="habilidades/html (2).png" alt="Icone-Habilidade">
+                </div>
+            </div>
+            <div id="info-habilidade">
+                
+                <p  style="color: var(--cor02); margin-top: 10px; margin-bottom: 10px;"><strong>Usado em: </strong></p>
+                <p id="info-usado"> Seleciona a Habilidade! </p>
+                <p style="color: var(--cor02); margin-top: 15px; margin-bottom: 10px;"><strong>Curso:</strong></p>
+                <p id="info-curso" > Seleciona a Habilidade! </p>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>PROJETOS</h1>
+            <div style='width: 220px;' id="barra-habilidades"></div>
+            <div id="cards-projetos">
+                <div class="card-projeto">
+                    <h2>CarToop</h2>
+                    <img src="fundos/CarToop (1).png" alt="Card-Projeto">
+                    <div class="botoes-card">
+                        <a href="https://cartoop.up.railway.app/" target="_blank"><div class="link-projeto"><strong>Site</strong></div></a>
+                        <a href="https://github.com/Tessaro03/CarToop" target="_blank"><div class="link-projeto"><strong>Código</strong></div></a>
+                    </div>
+                    <div id="sobre-projeto">
+                        <p style="color: var(--cor02); margin-bottom: 5px;"><strong>Sobre: </strong></p>
+                        <p style="margin-right: 5px; margin-top: 10px; margin-bottom: 24px;">Um projeto pessoal - Plataforma online que une entusiastas de veículos. Com recursos abrangentes, permite comprar, vender e até favoritar carros, motos, vans e caminhões.</p>
+                    </div>
+                    <div id="tecnologias-projeto">
+                        <p style="color: var(--cor02);"><strong>Tecnologias: </strong></p>
+                        <div class="tecnoligia-icone"><img src="habilidades/python (1).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/icons8-django-64.png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/js (2).png " alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/css-3 (2).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/html (2).png" alt=""></div>
+
+                    </div>
+                </div>
+        
+                <div class="card-projeto">
+                    <h2>TaskHub </h2>
+                    <img src="fundos/TaskHubb (1).png" alt="Card-Projeto">
+                    <div class="botoes-card">
+                        <a href="https://taskhub.up.railway.app/" target="_blank"><div class="link-projeto"><strong>Site</strong></div></a>
+                        <a href="https://github.com/Tessaro03/TaskHub" target="_blank"><div class="link-projeto"><strong>Código</strong></div></a>
+                    </div>
+                    <div id="sobre-projeto">
+                        <p style="color: var(--cor02); margin-bottom: 5px; margin-top: 10px;"><strong>Sobre: </strong></p>
+                        <p style="margin-right: 5px;">Um projeto de organização de projetos. Simplifica a gestão ao permitir equipes colaborativas, acompanhamento de progresso e centralização de informações com simplicidade</p>
+                    </div>
+                    <div id="tecnologias-projeto">
+                        <p style="color: var(--cor02);"><strong>Tecnologias: </strong></p>
+                        <div class="tecnoligia-icone"><img src="habilidades/python (1).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/icons8-django-64.png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/js (2).png " alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/css-3 (2).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/html (2).png" alt=""></div>
+
+                    </div>
+                </div>
+
+                <div class="card-projeto">
+                    <h2>API Players </h2>
+                    <img src="fundos/TaskHubb (1).png" alt="Card-Projeto">
+                    <div class="botoes-card">
+                        <a href=""><div class="link-projeto"><strong>Site</strong></div></a>
+                        <a href=""><div class="link-projeto"><strong>Código</strong></div></a>
+                    </div>
+                    <div id="sobre-projeto">
+                        <p style="color: var(--cor02); margin-bottom: 5px;"><strong>Sobre: </strong></p>
+                        <p style="margin-right: 5px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur possimus laborum autem dolorem, ducimus vitae praesentium ullam neque tempora quod id nisi voluptates dicta omnis error. Quisquam nam fugit odio?</p>
+                    </div>
+                    <div id="tecnologias-projeto">
+                        <p style="color: var(--cor02);"><strong>Tecnologias: </strong></p>
+                        <div class="tecnoligia-icone"><img src="habilidades/python (1).png" alt=""></div>
+                        <div class="tecnoligia-icone"><img src="habilidades/icons8-django-64.png" alt=""></div>
+
+                        <div class="tecnoligia-icone"><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+       
+    </main>
+</body>
+<script>
+    let selectedIcon = null;
+
+    function selecionarIcone(elemento, curso, usado) {
+        const infoCurso = document.getElementById("info-curso");
+        const infoUsado = document.getElementById("info-usado");
+
+        if (selectedIcon) {
+            selectedIcon.style.boxShadow = "none";
+        }
+
+        infoCurso.innerHTML = `${curso}`;
+        infoUsado.innerHTML = `${usado}`;
+
+        elemento.style.boxShadow = "0px 0px 10px rgba(1, 223, 156, 0.638)";
+        selectedIcon = elemento;
+    }
+</script>
+
+</html>

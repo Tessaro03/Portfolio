@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+:root{
+    --cor00: #000604;
+    --cor01: #09614C;
+    --cor02: #10AD89;
+    --cor03: #14E0B1;
+    --cor04: #5AE6C5;
+}
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+#teste{
+    background-image: url(fundos/fundo\(2\).jpeg);
+    background-size: cover;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #000000bb;
+    box-shadow: 0px 0px 20px #00000083;
+}
+
+#header > h2{
+    margin-left: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#header > img{
+    margin-right: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+#perfil{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+#dados-perfil{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    background-color: rgba(21, 21, 21, 0.923);
+    color: white;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.083);
+}
+
+#dados-perfil > h1{
+    margin: auto;
+    font-size: 24px;
+    width: 75%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+#dados-perfil > p{
+    margin-bottom: 5px;
+}
+
+#icones-perfil{
+    text-align: center;
+    display: inline;
+}
+#icones-perfil > a >img{
+    margin: 10px;    
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(153, 255, 224, 0.193);
+    border: 2px solid var(--cor02);
+}
+#foto-perfil{
+    margin-top: 20px;
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(153, 255, 224, 0.638);
+    border: 5px solid var(--cor02);
+
+}
+
+/*--------------------------------------------------------------------*/
+
+#sobre-mim{
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    padding-top: 30px;
+}
+
+#sobre-mim > h1{
+    font-size: 38px;
+    
+}
+
+
+#sobre-mim-info{
+    margin: auto;
+    text-align: justify;
+    width: 90%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+#curriculo{
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+
+    color: rgb(255, 255, 255);
+    background-color: var(--cor02);
+    border-radius: 10px;
+    border: 0px;
+    margin-bottom: 30px;
+}
+
+#curriculo > img{
+    margin-left: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+#habilidades{
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#habilidades > h1{
+    font-size: 38px;
+}
+
+#barra-habilidades{
+    margin: auto;
+    width: 280px;
+    height: 5px;
+    background-image: linear-gradient(to right, var(--cor02), var(--cor03));
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#icones-habilidades{
+    text-align: center;
+    display: inline-block;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.icone-habilidade{
+    display: inline-block;
+    border: 1px solid rgb(71, 71, 71);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+
+}
+.icone-habilidade:hover{
+    box-shadow: 0px 0px 10px rgba(1, 223, 156, 0.759);
+
+}
+
+#info-habilidade{
+    text-align: left;
+    margin: auto;
+    border: 1px solid rgb(71, 71, 71);
+    width: 85%;
+    padding: 10px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.038);
+}
+
+#info-curso {
+    line-height: 1.5;   
+}
+#info-usado {
+    line-height: 1.5; 
+}
+/*--------------------------------------------------------------------*/
+
+#projetos{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#projetos > h1{
+    font-size: 38px;
+}
+
+#cards-projetos{
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.card-projeto{
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.371);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.149);
+
+
+}
+
+.card-projeto > h2{
+    font-size: 38px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.16)
+}
+
+.card-projeto > img{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+
+}
+
+.botoes-card{
+    margin: auto;
+    width: 270px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-projeto{
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    border: 2px solid var(--cor02);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.122);
+    border-radius: 5px;
+}
+
+.link-projeto:hover{
+    background-color: var(--cor02);
+}
+
+.info-projeto{
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid var(--cor02);
+    color: white;
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.122);
+    border-radius: 5px;
+}
+
+.info-projeto:hover{
+    background-color: var(--cor02);
+}
+
+#tecnologias-projeto{
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+#sobre-projeto{
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.tecnoligia-icone{
+    display: inline-block;
+    border: 1px solid rgb(71, 71, 71);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.tecnoligia-icone > img{
+    width: 32px;
+    height: 32px;
+}
