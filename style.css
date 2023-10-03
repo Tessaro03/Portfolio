@@ -219,11 +219,13 @@ body{
 
 #cards-projetos{
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     margin: auto;
     margin-top: 30px;
     border-radius: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .card-projeto{
