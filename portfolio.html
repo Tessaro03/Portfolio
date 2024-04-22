@@ -56,11 +56,14 @@
             <h1>HABILIDADES</h1>
             <div id="barra-habilidades"></div>
             <div id="icones-habilidades">
-                <div class="icone-habilidade" id="java"  onclick="selecionarIcone(this, '- Persistência com JPA: Hibernate | Alura <br> - Maven: gerenciamento de dependências e build de aplicações Java | Alura <br> - Java e JDBC: trabalhando com um banco de dados | Alura <br> - Linguagem de Programação Orientada á objetos | UNIP <br> - Java POO   | Curso em Video <br> - Java Básico   | Curso em Video ', 'Utilizei Java nas Atividades Práticas Supervisionadas (APS) na UNIP, onde desenvolvi um quiz educativo abordando a importância de cuidar do meio ambiente. Criei uma interface gráfica utilizando JavaFX. Além disso, realizei um projeto com orientação a objetos (POO) no contexto de um zoológico.')">
+                <div class="icone-habilidade" id="java"  onclick="selecionarIcone(this, ' - Boas práticas de programação: automatizando testes com Java | Alura <br> - Persistência com JPA: Hibernate | Alura <br> - Maven: gerenciamento de dependências e build de aplicações Java | Alura <br> - Java e JDBC: trabalhando com um banco de dados | Alura <br> - Linguagem de Programação Orientada á objetos | UNIP <br> - Java POO   | Curso em Video <br> - Java Básico   | Curso em Video ', 'Utilizei Java nas Atividades Práticas Supervisionadas (APS) na UNIP, onde desenvolvi um quiz educativo abordando a importância de cuidar do meio ambiente. Criei uma interface gráfica utilizando JavaFX. Além disso, realizei um projeto com orientação a objetos (POO) no contexto de um zoológico.')">
                     <img src="habilidades/java (1).png" alt="Icone-Habilidade">
                 </div>
-                <div class="icone-habilidade" id="spring"  onclick="selecionarIcone(this, '- Spring Boot 3: API Rest em Java | Alura <br> - Spring Boot 3: Boas Praticas e Proteja uma API Rest em Java  | Alura <br> - Spring Boot 3: Trabalhando com Lambdas, Streams | Alura  <br> - Java: persistência de dados e consultas com Spring Data JPA | Alura', 'Utilizei o Spring Boot como parte do meu processo de aprendizagem, onde desenvolvi vários projetos. Um deles envolveu a criação de uma aplicação que consumia uma API de séries, armazenando informações sobre temporadas e episódios em um banco de dados e traduzindo sinopses com a ajuda da API do ChatGPT. Além disso, desenvolvi uma aplicação que consultava a tabela FIPE para fornecer informações sobre valores de veículos. Também criei um projeto de cadastro de músicas e artistas, todos com o uso eficaz e prático do Spring Boot.')">
+                <div class="icone-habilidade" id="spring"  onclick="selecionarIcone(this, ' - Spring Boot 3: documente, teste e prepare uma API para o deploy | Alura <br> - Spring Boot 3: API Rest em Java | Alura <br> - Spring Boot 3: Boas Praticas e Proteja uma API Rest em Java  | Alura <br> - Spring Boot 3: Trabalhando com Lambdas, Streams | Alura  <br> - Java: persistência de dados e consultas com Spring Data JPA | Alura', 'Utilizei o Spring Boot como parte do meu processo de aprendizagem, onde desenvolvi vários projetos. Um deles envolveu a criação de uma aplicação que consumia uma API de séries, armazenando informações sobre temporadas e episódios em um banco de dados e traduzindo sinopses com a ajuda da API do ChatGPT. Além disso, desenvolvi uma aplicação que consultava a tabela FIPE para fornecer informações sobre valores de veículos. Também criei um projeto de cadastro de músicas e artistas, todos com o uso eficaz e prático do Spring Boot.')">
                     <img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt="Icone-Habilidade">
+                </div>
+                <div class="icone-habilidade" id="docker"  onclick="selecionarIcone(this, '- Docker: criando e gerenciando containers | Alura <br> - Microsserviços na prática: entendendo a tomada de decisões | Alura' , 'Durante meu aprendizado em desenvolvimento de software, utilizei o Docker como peça central em um projeto de microservice chamado Food Microservice. Essa aplicação, baseada em arquitetura de microservices, envolve módulos para pedidos e pagamentos. A integração do Docker permitiu containerizar cada microserviço, simplificando o desenvolvimento, teste e implantação. Com essa abordagem, pude garantir consistência, escalabilidade e eficiência em todo o ciclo de vida do projeto, contribuindo para uma entrega bem-sucedida e ágil do Food Microservice.')">
+                    <img src="habilidades/docker.png" alt="Icone-Habilidade">
                 </div>
                 <div class="icone-habilidade" id="python" onclick="selecionarIcone(this, ' - Python: avançando na orientação a objetos | Alura <br> - Python: entendendo a Orientação a Objetos | Alura <br> - Introdução a Programação Estruturada | UNIP <br> - Python 3 - Mundo 3   | Curso em Video <br> - Python 3 - Mundo 2   | Curso em Video <br> - Python 3 - Mundo 1   | Curso em Video <br> ' , ' O Python desempenhou um papel fundamental no meu aprendizado em programação. Através dele, adquiri conhecimentos sobre os fundamentos da programação, os quais pude aplicar em projetos como TaskHub e Cartoop, além de um projeto de criptografia e descriptografia que desenvolvi para as Atividades Práticas Supervisionadas (APS) na UNIP. ')">
                     <img src="habilidades/python (1).png" alt="Icone-Habilidade">
@@ -93,6 +96,75 @@
         <section id="projetos">
             <h1>PROJETOS</h1>
             <div style='width: 220px;' id="barra-habilidades"></div>
+            <h3>Utilizando (Java - Spring)</h3>
+            <div >
+                <div id="projetos-inline">
+                    <div class="card-projeto-inline">
+                        <div class="text-projeto-inline">
+                            <h2>Food Microservice</h2>
+                            <p>Este projeto de microservices é o resultado do meu aprendizado em desenvolvimento de software usando Java, Spring Framework e a arquitetura de microservices. Consiste em dois serviços principais: um serviço de Pedido, responsável por registrar os pedidos dos clientes, e um serviço de Pagamento, que processa os pagamentos e informa o serviço de Pedido após a confirmação.</p>
+                            <a href="https://github.com/Tessaro03/Food-MicroService" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
+                        </div>
+                        <div class="icones-projeto-inline">
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/docker.png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                            
+                        </div>
+                    </div>
+                    <div class="card-projeto-inline">
+                        <div class="text-projeto-inline">
+                            <h2>TaskHub Api</h2>
+                            <p>Esta API foi concebida para oferecer uma experiência completa no gerenciamento de equipes, projetos e tarefas associadas a esses projetos.<br>- Operações CRUD Completas <br>- Validações Avançadas <br>- Segurança Avançada</p>
+                            <a href="https://github.com/Tessaro03/TaskHubApi" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
+                        </div>
+                        <div class="icones-projeto-inline">
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="card-projeto-inline">
+                        <div class="text-projeto-inline">
+                            <h2>Gestão API</h2>
+                            <p>A Gestão API é uma solução completa para gerenciamento de lojas, desenvolvida em Java com o framework Spring. Esta API oferece recursos avançados para administrar funcionários, categorias e produtos em uma loja, utilizando um banco de dados MySQL e JWT para autenticação.</p>
+                            <a href="https://github.com/Tessaro03/gestaoAPI" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
+                        </div>
+                        <div class="icones-projeto-inline">
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="card-projeto-inline">
+                        <div class="text-projeto-inline">
+                            <h2>ControlledMoney </h2>
+                            <p>A ControlledMoney API é uma solução eficiente para controle financeiro, desenvolvida em Java com o framework Spring. Esta API permite aos usuários registrar seus lucros mensais, gastos e parcelas, fornecendo uma previsão detalhada de lucro, gasto e status de pagamento.</p>
+                            <a href="https://github.com/Tessaro03/ControlledMoney" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
+                        </div>
+                        <div class="icones-projeto-inline">
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="card-projeto-inline">
+                        <div class="text-projeto-inline">
+                            
+                            <h2>Quiz Educacional</h2>
+                            <p>Projeto foi desenvolvido como parte do curso de Ciência da Computação com o objetivo de criar um jogo educativo em Java utilizando a biblioteca JavaFX. Principal tema abordado é a Educação Ambienta</p>
+                            <a href="https://github.com/Tessaro03/QuizEducacional" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
+                        </div>
+                        <div class="icones-projeto-inline">
+                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 style="margin-top: 50px;">Utilizando (Python - Django)</h3>
+            <p style="margin-top: 10px;">Sites desativados</p>
+
             <div id="cards-projetos">
                 <div class="card-projeto">
                     <h2>TaskHub </h2>
@@ -135,7 +207,7 @@
                         <div class="tecnoligia-icone"><img src="habilidades/js (2).png " alt=""></div>
                         <div class="tecnoligia-icone"><img src="habilidades/css-3 (2).png" alt=""></div>
                         <div class="tecnoligia-icone"><img src="habilidades/html (2).png" alt=""></div>
-
+    
                     </div>
                 </div>
                 
@@ -159,95 +231,11 @@
                         <div class="tecnoligia-icone"><img src="habilidades/html (2).png" alt=""></div>
                     </div>
                 </div>
-
-                <div class="card-projeto">
-                    <h2>API Escola </h2>
-                    <img  src="fundos/ESCOLA.png" alt="Card-Projeto">
-                    <div class="botoes-card">
-                        <a href="https://api-escola.up.railway.app/" target="_blank"><div class="link-projeto"><strong>Site</strong></div></a>
-                        <a href="https://github.com/Tessaro03/Django-API" target="_blank"><div class="link-projeto"><strong>Código</strong></div></a>
-                    </div>
-                    <div id="sobre-projeto">
-                        <p style="color: var(--cor02); margin-bottom: 5px;"><strong>Sobre: </strong></p>
-                        <p style="margin-right: 5px;">API desenvolvida via Django Rest Framework, proporciona um gerenciamento abrangente de alunos e cursos, permitindo visualizar matrículas individuais, filtrar informações, buscar dados específicos e implementar paginação. Validando rigorosamente os dados, garante-se a precisão das informações. Uma solução dinâmica e eficaz para administração educacional.</p>
-                    </div>
-                    <div id="tecnologias-projeto">
-                        <p style="color: var(--cor02);"><strong>Tecnologias: </strong></p>
-                        <div class="tecnoligia-icone"><img src="habilidades/python (1).png" alt=""></div>
-                        <div class="tecnoligia-icone"><img src="habilidades/icons8-django-64.png" alt=""></div>
-
-                        <div class="tecnoligia-icone"><img src="habilidades/servidor-sql (1).png" alt=""></div>
-                        
-                    </div>
-                </div>
-
             </div>
-            <div >
-                <div id="projetos-inline">
-                    <div class="card-projeto-inline">
-                        <div class="text-projeto-inline">
-                            <h2>TaskHub Api</h2>
-                            <p>Esta API foi concebida para oferecer uma experiência completa no gerenciamento de equipes, projetos e tarefas associadas a esses projetos.<br>- Operações CRUD Completas <br>- Validações Avançadas <br>- Segurança Avançada</p>
-                            <a href="https://github.com/Tessaro03/ScreenSeries" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
-                        </div>
-                        <div class="icones-projeto-inline">
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="card-projeto-inline">
-                        <div class="text-projeto-inline">
-                            <h2>Screen Series</h2>
-                            <p>Este projeto consome uma API de séries, salvando informações como título da série, temporada, dados de cada episódio e elenco. Além disso, utiliza a API do ChatGPT para traduzir automaticamente as sinopses de cada episódio, enriquecendo a experiência do usuário.</p>
-                            <a href="https://github.com/Tessaro03/ScreenSeries" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
-                        </div>
-                        <div class="icones-projeto-inline">
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="card-projeto-inline">
-                        <div class="text-projeto-inline">
-                            <h2>Screen Music</h2>
-                            <p>Projeto Java que cadastra artistas, os afilia a músicas e salva dados em um banco de dados SQL. Oferece flexibilidade na associação de artistas a várias músicas, proporcionando um gerenciamento abrangente. Integração com a API ChatGPT , permitindo pesquisas intuitivas e detalhadas sobre os artistas.</p>
-                            <a href="https://github.com/Tessaro03/ScreenMusic" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
-                        </div>
-                        <div class="icones-projeto-inline">
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/servidor-sql (1).png" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="card-projeto-inline">
-                        <div class="text-projeto-inline">
-                            <h2>Tabela FIPE</h2>
-                            <p>Desenvolvi um projeto em Java usando o framework Spring para acessar a tabela FIPE. Com essa aplicação, é possível realizar consultas de veículos por categoria, marca, modelo e ano. A solução proporciona uma experiência ágil e eficiente na obtenção de informações sobre preços de veículos no mercado brasileiro.</p>
-                            <a href="https://github.com/Tessaro03/TabelaFipe" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
-                        </div>
-                        <div class="icones-projeto-inline">
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/icons8-logotipo-da-primavera-64-removebg-preview.png" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="card-projeto-inline">
-                        <div class="text-projeto-inline">
-                
-                            <h2>Quiz Educacional</h2>
-                            <p>Projeto foi desenvolvido como parte do curso de Ciência da Computação com o objetivo de criar um jogo educativo em Java utilizando a biblioteca JavaFX. Principal tema abordado é a Educação Ambienta</p>
-                            <a href="https://github.com/Tessaro03/QuizEducacional" target="_blank"><div class="link-projeto-incard"><strong>Código</strong></div></a>
-                        </div>
-                        <div class="icones-projeto-inline">
-                            <div class="tecnoligia-icone-inline "><img src="habilidades/java (1).png" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            
             
         </section>
-       
+        
     </main>
 </body>
 <script>
