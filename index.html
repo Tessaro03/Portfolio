@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriel | Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">.Gabriel</a>
+
+    <nav class="nav">
+      <a href="#projects" data-i18n="nav.projects">Projetos</a>
+      <a href="#case" data-i18n="nav.case">Case Study</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#courses" data-i18n="nav.courses">Cursos</a>
+      <a href="#experience" data-i18n="nav.experience">Experiência</a>
+      <a href="#contact" class="btn btn--ghost" data-i18n="nav.contact">Contato</a>
+    </nav>
+
+    <!-- Idioma + Tema -->
+    <div class="lang">
+      <button class="chip chip--active" data-lang="pt">PT</button>
+      <button class="chip" data-lang="en">EN</button>
+      <button class="chip" data-lang="es">ES</button>
+      <button id="themeToggle" class="chip" type="button" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <p class="kicker" data-i18n="hero.kicker">Full Stack Developer</p>
+        <h1 data-i18n="hero.title">Construo APIs seguras e produtos web escaláveis</h1>
+        <p class="subtitle" data-i18n="hero.subtitle">
+          Java (Spring) • Angular • SQL • Docker • AWS — foco em arquitetura, performance e entrega.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#projects" data-i18n="hero.ctaProjects">Ver projetos</a>
+          <a class="btn btn--ghost" id="cvLink" download href="#" target="_blank" rel="noreferrer" data-i18n="hero.ctaCV">Baixar CV</a>
+ 
+        
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">+10</div>
+            <div class="stat__label" data-i18n="hero.stat1">projetos concluídos</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">JWT</div>
+            <div class="stat__label" data-i18n="hero.stat2">Auth & Segurança</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Docker</div>
+            <div class="stat__label" data-i18n="hero.stat3">Deploy automatizado</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card hero__card">
+        <div class="avatar">
+          <img src="./assets/eu.png" alt="Foto do Gabriel" />
+        </div>
+        <h2 class="name" data-i18n="profile.name">Gabriel Tessaro Favareto</h2>
+        <p class="role" data-i18n="profile.role">Full Stack Developer</p>
+
+        <div class="social">
+          <a target="_blank" href="https://www.linkedin.com/in/gabriel-tessaro-b29728216/" aria-label="LinkedIn"><img src="assets/linkedin.png" alt="" srcset=""></a>
+          <a target="_blank" href="https://github.com/Tessaro03" aria-label="GitHub"><img src="assets/github.png" alt="" srcset=""></a>
+          <a target="_blank" href="https://api.whatsapp.com/qr/WR7PN7VJ2BQVE1?autoload=1&app_absent=0" aria-label="WhatsApp"><img src="assets/whatsapp.png" alt="" srcset=""></a>
+        </div>
+
+        <div class="tags" id="heroTags"></div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="section__title">
+        <h2 data-i18n="about.title">Sobre</h2>
+        <p data-i18n="about.subtitle">Direto ao ponto: o que eu faço e como eu entrego.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <h3 data-i18n="about.h3">O que eu entrego</h3>
+          <ul class="list">
+            <li data-i18n="about.b1">APIs REST com autenticação (JWT), validações e logs.</li>
+            <li data-i18n="about.b2">Front-end em Angular com foco em UX e performance.</li>
+            <li data-i18n="about.b3">Integrações com banco (SQL), Docker e deploy.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3 data-i18n="about.methodTitle">Como eu trabalho</h3>
+          <ol class="steps">
+            <li><span>1</span><p data-i18n="about.m1">Entendo o problema e defino escopo/critério de sucesso.</p></li>
+            <li><span>2</span><p data-i18n="about.m2">Desenho arquitetura simples e escalável.</p></li>
+            <li><span>3</span><p data-i18n="about.m3">Implemento, testo, documento e deixo pronto pra deploy.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section__title">
+        <h2 data-i18n="projects.title">Projetos</h2>
+        <p data-i18n="projects.subtitle">Seleção de projetos com código, demo e stack.</p>
+      </div>
+
+      <div class="toolbar">
+        <input id="search" class="input" type="search" placeholder="Buscar..." />
+        <div id="filters" class="filters"></div>
+      </div>
+
+      <div id="projectsGrid" class="projects"></div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case" class="section">
+      <div class="section__title">
+        <h2 data-i18n="case.title">Case Study</h2>
+        <p data-i18n="case.subtitle">Um projeto explicado “por dentro” (isso te diferencia).</p>
+      </div>
+
+      <article class="case">
+        <header class="case__head">
+          <h3 data-i18n="case.h">API de Gestão Financeira (exemplo)</h3>
+          <div class="chips" id="caseChips"></div>
+        </header>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h4 data-i18n="case.problemT">Problema</h4>
+            <p data-i18n="case.problem">
+              Necessidade de centralizar lançamentos, categorias e relatórios com controle de acesso e histórico.
+            </p>
+          </div>
+          <div class="panel">
+            <h4 data-i18n="case.solutionT">Solução</h4>
+            <p data-i18n="case.solution">
+              API Spring com JWT, validações, camadas, documentação e deploy Docker.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel">
+            <h4 data-i18n="case.archT">Arquitetura</h4>
+            <p data-i18n="case.arch">Angular → API (Spring) → MySQL → (cache opcional) → CI/CD</p>
+          </div>
+          <div class="panel">
+            <h4 data-i18n="case.decisionsT">Decisões</h4>
+            <ul class="list">
+              <li data-i18n="case.d1">DTOs + validação (Bean Validation)</li>
+              <li data-i18n="case.d2">Roles por perfil (ADMIN/USER)</li>
+              <li data-i18n="case.d3">Logs estruturados + tratamento de erros</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h4 data-i18n="case.resultsT">Resultado</h4>
+            <ul class="list">
+              <li data-i18n="case.r1">Código organizado, fácil de manter e evoluir.</li>
+              <li data-i18n="case.r2">Fluxo de deploy replicável com Docker.</li>
+              <li data-i18n="case.r3">Base pronta para testes e observabilidade.</li>
+            </ul>
+          </div>
+        </div>
+
+        <footer class="case__foot">
+          <a class="btn btn--ghost" href="#" data-i18n="case.code">Ver código</a>
+        </footer>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section__title">
+        <h2 data-i18n="skills.title">Skills</h2>
+        <p data-i18n="skills.subtitle">O que eu uso no dia a dia (e o que eu já usei).</p>
+      </div>
+      <div class="grid-3" id="skillsGrid"></div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section">
+      <div class="section__title">
+        <h2 data-i18n="courses.title">Cursos & Certificações</h2>
+        <p data-i18n="courses.subtitle">Formações focadas em Java/Spring, Microservices, Docker e Django.</p>
+      </div>
+      <div id="coursesGrid" class="grid-2"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section__title">
+        <h2 data-i18n="exp.title">Experiência</h2>
+        <p data-i18n="exp.subtitle">Foco em entregas e resultados (não só responsabilidades).</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section__title">
+        <h2 data-i18n="contact.title">Contato</h2>
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <p><strong>Email:</strong> <span>gabrieltessarofavareto@gmail.com</span></p>
+          <p><strong>LinkedIn:</strong> <span>/in/gabriel-tessaro-b29728216</span></p>
+          <p><strong>GitHub:</strong> <span>Tessaro03</span></p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Gabriel — <span data-i18n="footer.rights">Todos os direitos reservados</span>.</p>
+    </footer>
+  </main>
+
+  <script src="./content.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
